@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:id="@+id/sub_xeb_bgPic"
+	></ImageView>
+	<com.jinke.flipboard.widget.mWebView
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:id="@+id/mWebView" 
+		
+		/>
+		<!-- 进度条 -->
+        <ProgressBar
+        android:layout_centerInParent="true"
+			android:id="@+id/mProgress_bar"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			style="@android:style/Widget.ProgressBar.Large.Inverse"
+			
+			android:visibility="gone"
+			/>
+			
+			<EditText
+				android:id="@+id/searchEdit"
+				android:layout_width="200px"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="150px"
+				android:layout_marginTop="430px"
+				android:visibility="gone"
+			></EditText>
+			<Button
+			android:id="@+id/searchButton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text=" 搜 索 "
+				android:layout_toRightOf="@id/searchEdit"
+				android:layout_marginLeft="10px"
+				android:layout_marginTop="430px"
+				android:visibility="gone"
+				></Button>
+				
+			
+</RelativeLayout>

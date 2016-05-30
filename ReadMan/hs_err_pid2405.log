@@ -1,0 +1,231 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:3375), pid=2405, tid=3064810352
+#  Error: ShouldNotReachHere()
+#
+# JRE version: 6.0_24-b07
+# Java VM: Java HotSpot(TM) Server VM (19.1-b02 mixed mode linux-x86 )
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x08be9400):  JavaThread "Unknown thread" [_thread_in_vm, id=2410, stack(0xb6a84000,0xb6ad5000)]
+
+Stack: [0xb6a84000,0xb6ad5000],  sp=0xb6ad37c0,  free space=317k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0x708370]
+V  [libjvm.so+0x2e8b5f]
+V  [libjvm.so+0x28167a]
+V  [libjvm.so+0x287711]
+V  [libjvm.so+0x699342]
+V  [libjvm.so+0x6973de]
+V  [libjvm.so+0x6961a6]
+V  [libjvm.so+0x695e10]
+V  [libjvm.so+0x69ac2a]
+V  [libjvm.so+0x69acbc]
+V  [libjvm.so+0x69ad80]
+V  [libjvm.so+0x69ab69]
+V  [libjvm.so+0x6e0aba]
+V  [libjvm.so+0x6e217f]
+V  [libjvm.so+0x3a94f8]
+V  [libjvm.so+0x6c9c8d]
+V  [libjvm.so+0x4025f6]
+C  [java+0x305c]
+C  [java+0x1942]  JavaMain+0x72
+C  [libpthread.so.0+0x5e99]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x08be9400 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=2410, stack(0xb6a84000,0xb6ad5000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+08048000-08052000 r-xp 00000000 07:00 1326491    /home/jinyang/android/Java/jdk1.6.0_21/bin/java
+08052000-08053000 rwxp 00009000 07:00 1326491    /home/jinyang/android/Java/jdk1.6.0_21/bin/java
+08be3000-08c49000 rwxp 00000000 00:00 0          [heap]
+90de0000-90e56000 r-xs 00902000 07:00 1067668    /home/jinyang/android/android-sdk-linux_86/platforms/android-10/android.jar
+90e56000-90e57000 ---p 00000000 00:00 0 
+90e57000-90ed7000 rwxp 00000000 00:00 0 
+90ed7000-90ed8000 ---p 00000000 00:00 0 
+90ed8000-90f60000 rwxp 00000000 00:00 0 
+90f60000-90f78000 rwxp 00000000 00:00 0 
+90f78000-90f83000 rwxp 00000000 00:00 0 
+90f83000-9101b000 rwxp 00000000 00:00 0 
+9101b000-91023000 rwxp 00000000 00:00 0 
+91023000-9103b000 rwxp 00000000 00:00 0 
+9103b000-91046000 rwxp 00000000 00:00 0 
+91046000-910dd000 rwxp 00000000 00:00 0 
+910dd000-910e3000 rwxp 00000000 00:00 0 
+910e3000-9112f000 rwxp 00000000 00:00 0 
+9112f000-92130000 rwxp 00000000 00:00 0 
+92130000-95130000 rwxp 00000000 00:00 0 
+95130000-96580000 rwxp 00000000 00:00 0 
+96580000-a9690000 rwxp 00000000 00:00 0 
+a9690000-aa0b0000 rwxp 00000000 00:00 0 
+aa0b0000-b3930000 rwxp 00000000 00:00 0 
+b3931000-b393a000 rwxp 00000000 00:00 0 
+b393a000-b39f1000 rwxp 00000000 00:00 0 
+b39f1000-b3c31000 rwxp 00000000 00:00 0 
+b3c31000-b69f1000 rwxp 00000000 00:00 0 
+b69f1000-b6a00000 r-xp 00000000 07:00 1182524    /home/jinyang/android/Java/jdk1.6.0_21/jre/lib/i386/libzip.so
+b6a00000-b6a02000 rwxp 0000e000 07:00 1182524    /home/jinyang/android/Java/jdk1.6.0_21/jre/lib/i386/libzip.so
+b6a02000-b6a0c000 r-xp 00000000 07:00 393328     /lib/i386-linux-gnu/libnss_files-2.13.so
+b6a0c000-b6a0d000 r-xp 00009000 07:00 393328     /lib/i386-linux-gnu/libnss_files-2.13.so
+b6a0d000-b6a0e000 rwxp 0000a000 07:00 393328     /lib/i386-linux-gnu/libnss_files-2.13.so
+b6a0e000-b6a17000 r-xp 00000000 07:00 393332     /lib/i386-linux-gnu/libnss_nis-2.13.so
+b6a17000-b6a18000 r-xp 00008000 07:00 393332     /lib/i386-linux-gnu/libnss_nis-2.13.so
+b6a18000-b6a19000 rwxp 00009000 07:00 393332     /lib/i386-linux-gnu/libnss_nis-2.13.so
+b6a24000-b6a2c000 rwxs 00000000 07:00 533843     /tmp/hsperfdata_jinyang/2405
+b6a2c000-b6a3f000 r-xp 00000000 07:00 393322     /lib/i386-linux-gnu/libnsl-2.13.so
+b6a3f000-b6a40000 r-xp 00012000 07:00 393322     /lib/i386-linux-gnu/libnsl-2.13.so
+b6a40000-b6a41000 rwxp 00013000 07:00 393322     /lib/i386-linux-gnu/libnsl-2.13.so
+b6a41000-b6a43000 rwxp 00000000 00:00 0 
+b6a47000-b6a4d000 r-xp 00000000 07:00 393324     /lib/i386-linux-gnu/libnss_compat-2.13.so
+b6a4d000-b6a4e000 r-xp 00005000 07:00 393324     /lib/i386-linux-gnu/libnss_compat-2.13.so
+b6a4e000-b6a4f000 rwxp 00006000 07:00 393324     /lib/i386-linux-gnu/libnss_compat-2.13.so
+b6a4f000-b6a55000 r-xp 00000000 07:00 1182475    /home/jinyang/android/Java/jdk1.6.0_21/jre/lib/i386/native_threads/libhpi.so
+b6a55000-b6a56000 rwxp 00006000 07:00 1182475    /home/jinyang/android/Java/jdk1.6.0_21/jre/lib/i386/native_threads/libhpi.so
+b6a56000-b6a79000 r-xp 00000000 07:00 1182513    /home/jinyang/android/Java/jdk1.6.0_21/jre/lib/i386/libjava.so
+b6a79000-b6a7b000 rwxp 00023000 07:00 1182513    /home/jinyang/android/Java/jdk1.6.0_21/jre/lib/i386/libjava.so
+b6a7b000-b6a82000 r-xp 00000000 07:00 393351     /lib/i386-linux-gnu/librt-2.13.so
+b6a82000-b6a83000 r-xp 00006000 07:00 393351     /lib/i386-linux-gnu/librt-2.13.so
+b6a83000-b6a84000 rwxp 00007000 07:00 393351     /lib/i386-linux-gnu/librt-2.13.so
+b6a84000-b6a87000 ---p 00000000 00:00 0 
+b6a87000-b6ad5000 rwxp 00000000 00:00 0 
+b6ad5000-b6af9000 r-xp 00000000 07:00 393319     /lib/i386-linux-gnu/libm-2.13.so
+b6af9000-b6afa000 r-xp 00023000 07:00 393319     /lib/i386-linux-gnu/libm-2.13.so
+b6afa000-b6afb000 rwxp 00024000 07:00 393319     /lib/i386-linux-gnu/libm-2.13.so
+b6afb000-b7288000 r-xp 00000000 07:00 1182488    /home/jinyang/android/Java/jdk1.6.0_21/jre/lib/i386/server/libjvm.so
+b7288000-b72db000 rwxp 0078d000 07:00 1182488    /home/jinyang/android/Java/jdk1.6.0_21/jre/lib/i386/server/libjvm.so
+b72db000-b76fa000 rwxp 00000000 00:00 0 
+b76fa000-b7854000 r-xp 00000000 07:00 393282     /lib/i386-linux-gnu/libc-2.13.so
+b7854000-b7855000 ---p 0015a000 07:00 393282     /lib/i386-linux-gnu/libc-2.13.so
+b7855000-b7857000 r-xp 0015a000 07:00 393282     /lib/i386-linux-gnu/libc-2.13.so
+b7857000-b7858000 rwxp 0015c000 07:00 393282     /lib/i386-linux-gnu/libc-2.13.so
+b7858000-b785b000 rwxp 00000000 00:00 0 
+b785b000-b785d000 r-xp 00000000 07:00 393292     /lib/i386-linux-gnu/libdl-2.13.so
+b785d000-b785e000 r-xp 00001000 07:00 393292     /lib/i386-linux-gnu/libdl-2.13.so
+b785e000-b785f000 rwxp 00002000 07:00 393292     /lib/i386-linux-gnu/libdl-2.13.so
+b785f000-b7866000 r-xp 00000000 07:00 1182522    /home/jinyang/android/Java/jdk1.6.0_21/jre/lib/i386/jli/libjli.so
+b7866000-b7868000 rwxp 00006000 07:00 1182522    /home/jinyang/android/Java/jdk1.6.0_21/jre/lib/i386/jli/libjli.so
+b7868000-b7869000 rwxp 00000000 00:00 0 
+b7869000-b787e000 r-xp 00000000 07:00 393347     /lib/i386-linux-gnu/libpthread-2.13.so
+b787e000-b787f000 r-xp 00015000 07:00 393347     /lib/i386-linux-gnu/libpthread-2.13.so
+b787f000-b7880000 rwxp 00016000 07:00 393347     /lib/i386-linux-gnu/libpthread-2.13.so
+b7880000-b7882000 rwxp 00000000 00:00 0 
+b7887000-b7888000 rwxp 00000000 00:00 0 
+b7888000-b7889000 r-xp 00000000 00:00 0 
+b7889000-b7894000 r-xp 00000000 07:00 1182511    /home/jinyang/android/Java/jdk1.6.0_21/jre/lib/i386/libverify.so
+b7894000-b7895000 rwxp 0000b000 07:00 1182511    /home/jinyang/android/Java/jdk1.6.0_21/jre/lib/i386/libverify.so
+b7895000-b7897000 rwxp 00000000 00:00 0 
+b7897000-b7898000 r-xp 00000000 00:00 0          [vdso]
+b7898000-b78b4000 r-xp 00000000 07:00 393269     /lib/i386-linux-gnu/ld-2.13.so
+b78b4000-b78b5000 r-xp 0001b000 07:00 393269     /lib/i386-linux-gnu/ld-2.13.so
+b78b5000-b78b6000 rwxp 0001c000 07:00 393269     /lib/i386-linux-gnu/ld-2.13.so
+bfa1f000-bfa40000 rwxp 00000000 00:00 0          [stack]
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 -Xbootclasspath:/home/jinyang/android/android-sdk-linux_86/platforms/android-10/android.jar 
+java_command: com.jinke.readman.bean.bean2XML
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+CLASSPATH=.:/home/jinyang/android/Java/jdk1.6.0_21/lib/tools.jar:/home/jinyang/android/Java/jdk1.6.0_21/lib/dt.jar
+PATH=/home/jinyang/android/android-ndk-r5:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/home/jinyang/android/Java/jdk1.6.0_21/bin
+USERNAME=jinyang
+LD_LIBRARY_PATH=/home/jinyang/android/Java/jdk1.6.0_21/jre/lib/i386/server:/home/jinyang/android/Java/jdk1.6.0_21/jre/lib/i386:/home/jinyang/android/Java/jdk1.6.0_21/jre/../lib/i386:/home/jinyang/android/Java/jdk1.6.0_21/jre/lib/i386/client:/home/jinyang/android/Java/jdk1.6.0_21/jre/lib/i386:
+SHELL=/bin/bash
+DISPLAY=:0.0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0x708f80], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGBUS: [libjvm.so+0x708f80], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGFPE: [libjvm.so+0x5c4100], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGPIPE: [libjvm.so+0x5c4100], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGXFSZ: [libjvm.so+0x5c4100], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGILL: [libjvm.so+0x5c4100], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGUSR1: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGUSR2: [libjvm.so+0x5c70e0], sa_mask[0]=0x00000004, sa_flags=0x10000004
+SIGHUP: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGINT: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGTERM: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGQUIT: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+
+
+---------------  S Y S T E M  ---------------
+
+OS:squeeze/sid
+
+uname:Linux 2.6.38-11-generic #49-Ubuntu SMP Mon Aug 29 20:47:58 UTC 2011 i686
+libc:glibc 2.13 NPTL 2.13 
+rlimit: STACK 8192k, CORE 0k, NPROC infinity, NOFILE 4096, AS infinity
+load average:0.05 0.12 0.19
+
+/proc/meminfo:
+MemTotal:        1994608 kB
+MemFree:           50656 kB
+Buffers:          431720 kB
+Cached:           605160 kB
+SwapCached:           68 kB
+Active:           766128 kB
+Inactive:        1069044 kB
+Active(anon):     558148 kB
+Inactive(anon):   246464 kB
+Active(file):     207980 kB
+Inactive(file):   822580 kB
+Unevictable:        1132 kB
+Mlocked:               0 kB
+HighTotal:       1121160 kB
+HighFree:           1688 kB
+LowTotal:         873448 kB
+LowFree:           48968 kB
+SwapTotal:        262136 kB
+SwapFree:         262068 kB
+Dirty:              3492 kB
+Writeback:             0 kB
+AnonPages:        799468 kB
+Mapped:           112416 kB
+Shmem:              5160 kB
+Slab:              38756 kB
+SReclaimable:      26264 kB
+SUnreclaim:        12492 kB
+KernelStack:        2848 kB
+PageTables:         6896 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     1259440 kB
+Committed_AS:    2344260 kB
+VmallocTotal:     122880 kB
+VmallocUsed:       66900 kB
+VmallocChunk:      45564 kB
+HardwareCorrupted:     0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       4096 kB
+DirectMap4k:      479224 kB
+DirectMap4M:      430080 kB
+
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 15 model 107 stepping 2, cmov, cx8, fxsr, mmx, sse, sse2, sse3, mmxext, 3dnow, 3dnowext
+
+Memory: 4k page, physical 1994608k(50656k free), swap 262136k(262068k free)
+
+vm_info: Java HotSpot(TM) Server VM (19.1-b02) for linux-x86 JRE (1.6.0_24-b07), built on Feb  2 2011 16:51:52 by "java_re" with gcc 3.2.1-7a (J2SE release)
+
+time: Wed Oct 26 19:30:26 2011
+elapsed time: 0 seconds
+
