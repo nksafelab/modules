@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_height="fill_parent" android:layout_width="fill_parent"
+ android:orientation="vertical"
+ android:id="@+id/dialog">
+ 
+ <ProgressBar
+	android:id="@+id/bindBar"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	style="@android:style/Widget.ProgressBar.Large.Inverse"
+	android:visibility="gone"
+	
+	/>
+<TextView
+	android:id="@+id/bindBarInfo"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="正在加载..."
+	android:visibility="gone"
+	android:layout_gravity="center"
+	android:textSize="30px"
+	android:layout_marginTop="10px"
+	android:textColor="#ffffff"
+	/>
+ </LinearLayout>

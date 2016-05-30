@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="600px" android:orientation="vertical"
+	android:layout_height="fill_parent"
+	> 
+	
+<LinearLayout
+	android:layout_width="600px" android:orientation="vertical"
+	android:layout_height="944px"
+	android:background="@drawable/cmainui_bg">
+
+				<RelativeLayout
+		        	android:orientation="horizontal"
+		        	android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+		        	android:padding="1dp"
+		        >
+		        
+		        <!-- 
+				        <ImageView
+				        	android:id="@+id/logo"
+				        	android:src="@drawable/logo"
+				        	android:layout_width="wrap_content"
+				        	android:layout_height="90px"
+				        ></ImageView>
+				        
+				         -->
+				      
+				        <LinearLayout 
+							android:layout_marginBottom="0dp"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content" 
+				        	
+				        	
+				        	android:layout_centerHorizontal="true"
+				        	android:paddingBottom="0dp"
+							
+							>
+							<Button android:id="@+id/recent"
+							
+								android:layout_width="wrap_content" 
+								android:layout_height="wrap_content"
+								
+								android:background = "@drawable/recentreading"
+								android:layout_marginRight="50px"
+								
+								android:visibility="gone"
+								
+								/>
+							<Button android:id="@+id/push" 
+							
+								android:layout_width="wrap_content" 
+								android:layout_height="wrap_content"
+								
+								android:background="@drawable/push"
+								android:layout_marginRight="50px"
+																android:visibility="gone"
+								
+								/>
+							<Button android:id="@+id/request"
+							
+								android:layout_width="wrap_content" 
+								android:layout_height="wrap_content"
+								
+								android:background="@drawable/requestbook"
+															
+								android:visibility="gone"
+								/>
+						</LinearLayout>
+		      </RelativeLayout> 
+		      
+		      
+<include  layout="@layout/search"></include>
+
+	<!--tabhost 主体-->
+	<FrameLayout android:id="@+id/portrait_containerBody"
+		android:layout_below="@+id/layoutHead"
+		 android:layout_width="537px"
+		   android:layout_height="780px"
+		   android:layout_marginTop="77px"
+		   android:layout_marginLeft="32px"
+		>
+	</FrameLayout>
+</LinearLayout>
+
+<include  layout="@layout/menu"></include>
+
+</LinearLayout>

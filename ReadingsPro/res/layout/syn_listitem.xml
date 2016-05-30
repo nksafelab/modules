@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="180px"
+	android:background="@drawable/listview_bg"
+	android:id="@+id/r1"
+	android:descendantFocusability= "blocksDescendants"
+	>
+	
+	<ImageView
+		android:id="@+id/syn_listitem_img"
+		android:layout_marginLeft="20px"
+		android:layout_width="92px"
+		android:layout_height="160px"
+		android:adjustViewBounds="true"
+	></ImageView>
+
+	<RelativeLayout
+		android:id="@+id/l1"
+		android:layout_marginLeft="20px"
+		android:layout_toRightOf="@id/syn_listitem_img"
+		android:layout_width="fill_parent"
+		android:layout_height="180px"
+	>
+	
+	
+	<TextView
+		android:id="@+id/syn_listitem_title"
+		android:layout_marginTop="5px"
+		android:layout_toRightOf="@id/syn_listitem_img"
+		android:singleLine="true"
+		android:textSize="22px" 
+		android:textColor="#ffffff"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text=""
+	></TextView>
+	
+	<ImageView
+		android:id="@+id/syn_listitem_buy360Img"
+		android:layout_below="@id/syn_listitem_title"
+		android:layout_toRightOf="@id/syn_listitem_img"
+		android:layout_marginTop="10px"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/buy360"
+	></ImageView>
+	<TextView
+		android:id="@+id/syn_listitem_360fee"
+		android:textSize="22px" 
+		android:textColor="#ffffff"
+		android:layout_below="@id/syn_listitem_title"
+		android:layout_toRightOf="@id/syn_listitem_buy360Img"
+		android:layout_marginTop="10px"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="获取中.."
+	></TextView>
+	
+	<ImageView
+		android:id="@+id/syn_listitem_dangdangImg"
+		android:layout_below="@id/syn_listitem_title"
+		android:layout_toRightOf="@id/syn_listitem_360fee"
+		android:layout_marginTop="10px"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/dangdang"
+	></ImageView>
+	<TextView
+		android:id="@+id/syn_listitem_dangdangfee"
+		android:textSize="22px" 
+		android:textColor="#ffffff"
+		android:layout_below="@id/syn_listitem_title"
+		android:layout_toRightOf="@id/syn_listitem_dangdangImg"
+		android:layout_marginTop="10px"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="获取中.."
+	></TextView>
+	
+	
+	
+	
+	<TextView
+		android:id="@+id/syn_listitem_author"
+		android:layout_marginTop="5px"
+		android:layout_toRightOf="@id/syn_listitem_img"
+		android:layout_below="@id/syn_listitem_buy360Img"
+		android:textSize="19px" 
+		android:textColor="#ffffff"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="作者:"
+	></TextView>
+	
+	<TextView
+		android:id="@+id/syn_listitem_publisher"
+		android:layout_marginTop="5px"
+		android:layout_toRightOf="@id/syn_listitem_img"
+		android:layout_below="@id/syn_listitem_author"
+		android:textSize="19px" 
+		android:textColor="#ffffff"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="出版社:"
+	></TextView>
+	
+	<TextView
+		android:id="@+id/syn_listitem_tags"
+		android:layout_marginTop="5px"
+		android:layout_toRightOf="@id/syn_listitem_img"
+		android:layout_below="@id/syn_listitem_publisher"
+		android:textSize="19px" 
+		android:textColor="#ffffff"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:singleLine="true"
+		android:text="摘要:"
+	></TextView>
+	
+	
+	
+	</RelativeLayout>
+	
+</RelativeLayout>

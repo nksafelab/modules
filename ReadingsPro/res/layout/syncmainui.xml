@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="600px" android:orientation="vertical"
+	android:layout_height="fill_parent"
+	> 
+
+<jinke.readings.wedget.Workspace
+	android:layout_width="600px"
+	android:layout_height="944px"
+>
+
+
+			<FrameLayout
+				android:layout_width="590px" 
+				
+				android:layout_height="wrap_content"
+				android:background="@drawable/cmainui_bg"
+				android:id="@+id/liner_layout1">
+			
+							<include  layout="@layout/search"></include>
+							<TextView
+									android:layout_marginTop="55px"
+									android:layout_marginLeft="100px"
+									android:textSize="22px" 
+									android:textColor="#ffffff"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:text="传统搜索"
+							></TextView>
+							<!--tabhost 主体-->
+							<FrameLayout android:id="@+id/portrait_containerBody"
+								 android:layout_width="507px"
+								   android:layout_height="780px"
+								   android:layout_marginTop="15px"
+								   android:layout_marginLeft="87px">   
+								
+							</FrameLayout>
+			</FrameLayout>
+			
+			
+			
+			<FrameLayout
+				android:layout_width="wrap_content" 
+				
+				android:layout_height="wrap_content"
+				android:background="@drawable/cmainui_bg"
+				android:id="@+id/liner_layout2">
+			
+							<include  layout="@layout/syn_paper_search"></include>
+							<TextView
+									android:layout_marginTop="55px"
+									android:layout_marginLeft="50px"
+									android:textSize="22px" 
+									android:textColor="#ffffff"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:text="聚合搜索-纸图搜索"
+							></TextView>
+							<!--tabhost 主体-->
+							<FrameLayout android:id="@+id/syn_paper_portrait_containerBody"
+								 android:layout_width="487px"
+								   android:layout_height="780px"
+								   android:layout_marginTop="15px"
+								   android:layout_marginLeft="27px">
+								
+							</FrameLayout>
+			</FrameLayout>
+			
+			<FrameLayout
+				android:layout_width="wrap_content" 
+				
+				android:layout_height="wrap_content"
+				android:background="@drawable/cmainui_bg"
+				android:id="@+id/liner_layout3">
+			
+							<include  layout="@layout/syn_data_search"></include>
+							<TextView
+									android:layout_marginTop="55px"
+									android:layout_marginLeft="50px"
+									android:textSize="22px" 
+									android:textColor="#ffffff"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:text="聚合搜索-数图搜索"
+							></TextView>
+							<!--tabhost 主体-->
+							<FrameLayout android:id="@+id/syn_data_portrait_containerBody"
+								 android:layout_width="487px"
+								   android:layout_height="780px"
+								   android:layout_marginTop="15px"
+								   android:layout_marginLeft="32px">  
+								
+							</FrameLayout>
+			</FrameLayout>
+
+
+
+</jinke.readings.wedget.Workspace>
+
+
+<include  layout="@layout/menu"></include>
+
+
+</LinearLayout>

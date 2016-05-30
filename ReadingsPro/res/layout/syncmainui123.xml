@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="600px" android:layout_height="fill_parent"
+	android:background="@drawable/cmainui_bg" android:orientation="vertical">
+
+	<include layout="@layout/search"></include>
+	<jinke.readings.wedget.MyHorizontal
+		android:layout_width="600px" android:layout_height="wrap_content"
+		android:scrollbars="none" android:id="@+id/horizon1">
+		<TableLayout android:layout_width="580px"
+			android:orientation="vertical" android:layout_height="wrap_content">
+
+			<TextView android:layout_marginTop="50px"
+				android:layout_marginLeft="32px" android:textSize="23px"
+				android:textColor="#ffffff" android:layout_width="542px"
+				android:layout_height="55px" android:text="  传统搜索"
+				android:background="@drawable/bg_head_1">
+			</TextView>
+			<FrameLayout android:id="@+id/portrait_containerBody"
+				android:layout_width="542px" android:layout_height="780px"
+				android:layout_marginTop="0px" android:layout_marginLeft="32px">
+			</FrameLayout>
+
+		</TableLayout>
+		<TableLayout android:layout_width="580px"
+			android:orientation="vertical" android:layout_height="fill_parent">
+			<TextView android:layout_marginTop="50px"
+				android:layout_marginLeft="11px" android:textSize="23px"
+				android:textColor="#ffffff" android:layout_width="542px"
+				android:layout_height="55px" android:text="  聚合搜索-纸图搜索"
+				android:background="@drawable/bg_head_1">
+			</TextView>
+
+
+			<FrameLayout android:id="@+id/syn_paper_portrait_containerBody"
+				android:layout_width="542px" android:layout_height="780px"
+				android:layout_marginTop="0px" android:layout_marginLeft="11px">
+			</FrameLayout>
+		</TableLayout>
+
+		<TableLayout android:layout_width="580px"
+			android:orientation="vertical" android:layout_height="fill_parent">
+			<TextView android:layout_marginTop="50px"
+				android:layout_marginLeft="11px" android:layout_marginRight="27px"
+				android:textSize="23px" android:textColor="#ffffff"
+				android:layout_width="541px" android:layout_height="55px"
+				android:text="  聚合搜索-数图搜索" android:background="@drawable/bg_head_1">
+			</TextView>
+			<FrameLayout android:id="@+id/syn_data_portrait_containerBody"
+				android:layout_width="545px" android:layout_height="780px"
+				android:layout_marginTop="0px" android:layout_marginLeft="11px"
+				android:layout_marginRight="32px">
+			</FrameLayout>
+
+		</TableLayout>
+	</jinke.readings.wedget.MyHorizontal>
+
+	<!--
+		<include layout="@layout/syn_paper_search"></include> <include
+		layout="@layout/syn_data_search"></include>
+	-->
+	<include layout="@layout/menu"></include>
+</LinearLayout>

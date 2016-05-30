@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="jinke.readings"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="6" />
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".CMain"
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:screenOrientation="reversePortait"
+                  >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainUI" android:theme="@android:style/Theme.NoTitleBar"
+        android:screenOrientation="reversePortait"></activity>
+        <activity 
+        android:name=".CMainUI" 
+        android:theme="@android:style/Theme.NoTitleBar"
+        android:screenOrientation="reversePortait"
+        ></activity>
+        <activity android:name=".RecentReadingList_old"></activity>
+        <activity android:name=".Tab1"></activity>
+        <activity android:name=".SearchResultList"	android:screenOrientation="reversePortait"></activity>
+        <activity android:name=".RecentReadingList"	android:screenOrientation="reversePortait"></activity>
+        <activity android:name=".ModuleView1"></activity>
+        <activity android:name=".ModuleView2"></activity>
+        <activity android:name=".ModuleView3"></activity>
+        <activity android:name=".Recent_Demo"></activity>
+        <activity android:name=".CWebView" android:screenOrientation="reversePortait"
+        ></activity>
+        <activity android:name=".HotWordActivity" android:screenOrientation="reversePortait"></activity>
+        
+        <activity android:name=".CMainUI" android:screenOrientation="reversePortait"
+        ></activity>
+        <activity android:name=".CTest"></activity>
+        <activity android:name=".CTest2"></activity>
+        <activity android:name=".CTest3"></activity>
+        <activity android:name=".CHistoryActivity"	android:screenOrientation="reversePortait"></activity>
+        <activity android:name=".RequestBookActivity" android:screenOrientation="reversePortait"></activity>
+
+    </application>
+    
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+     <uses-permission
+android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> 
+    <uses-permission
+android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>  
+    
+</manifest>

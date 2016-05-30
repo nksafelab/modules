@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/history_bg"
+        android:id="@+id/linear"
+        
+        >
+        <include  layout="@layout/search"></include>
+        <RelativeLayout
+			        android:layout_width="fill_parent"
+	       			android:layout_height="fill_parent"
+			      	android:id="@+id/workspace1"
+		        >
+		        
+		      <jinke.readings.wedget.Workspace
+		      	android:layout_width="fill_parent"
+       			android:layout_height="fill_parent"
+		      	android:id="@+id/workspace"
+		      >
+		        <include  layout="@layout/search_result"></include>
+		      </jinke.readings.wedget.Workspace>
+		        
+        <!-- 进度条 -->
+			        <ProgressBar
+						android:id="@+id/result_bar"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:paddingTop="300px"
+						android:layout_centerHorizontal="true"
+						android:visibility="gone"
+						style="@android:style/Widget.ProgressBar.Large.Inverse"
+						/>
+					<TextView
+						android:id="@+id/result_loading"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="加载中.."
+						android:paddingTop="10dip"
+						android:layout_centerHorizontal="true"
+						android:layout_below="@id/result_bar"
+						android:textColor="#ffffff"
+						android:visibility="gone"
+						/>
+			</RelativeLayout>
+    </LinearLayout>

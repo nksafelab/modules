@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, CMain!</string>
+    <string name="app_name">Readings</string>
+   
+   
+    <string name="url_hotword">http://61.181.14.184/readman/search/hotword/gethotword.asp</string>
+    <!-- 搜索源接口 -->
+    <string name="url_baiduwenku3g">http://61.181.14.184/readman/search/getbaiduwk3g.asp</string>
+    <string name="url_baiduwenku">http://61.181.14.184/readman/search/getbaiduwenku.asp</string>
+    <string name="url_baiduxs">http://61.181.14.184/readman/search/getbaiduxs3g.asp</string>
+    <string name="url_youku">http://61.181.14.184/readman/search/getyouku.asp</string>
+    <string name="url_iask">http://61.181.14.184/readman/search/getsinaishare.asp</string>
+    <string name="url_mk">http://61.181.14.184/readman/search/getmakebook3.asp</string>
+    <!-- 动漫部落 -->
+    <string name="url_cartoon">http://61.181.14.184/readman/search/getcartoon.asp</string>
+    <string name="url_googlebook">http://61.181.14.184:8084/googleBook/googleBookSearch.do?method=search</string>
+    <string name="url_txtr">http://61.181.14.184/readman/search/gettxtr.asp</string>
+    
+    <!-- 求书列表接口 -->
+    <string name="url_request">http://61.181.14.184:8088/Readings/getBookList.do?bookName=</string>
+    
+    <!-- 登陆接口 -->
+    <string name="url_checkuser">http://61.181.14.184/readman/server/checkuser.asp</string>
+    
+    
+    <!-- CHistoryActivity页面字符串 -->
+
+    <string name="CHistoryActivity_history_key">search history</string>
+
+    <string name="CHistoryActivity_hot_key">hot words</string>
+
+    
+
+    <!-- SearchResultActivity页面字符串-->
+
+    <string name="SearchResultActivity_loading">Loading...</string>
+
+    
+
+    <!-- SearchSource页面字符串 -->
+
+    <string name="SearchSource_baiduwenku3g">BAIDU 3G</string>
+
+    <string name="SearchSource_baiduwenku">BAIDU Library</string>
+
+    <string name="SearchSource_googlebook">GOOGLE Books</string>
+
+    <string name="SearchSource_cartoon">Cartoon tribe</string>
+
+    <string name="SearchSource_baiduxs">BAIDU novel</string>
+
+    <string name="SearchSource_iask">SINA iAsk</string>
+
+    <string name="SearchSource_mk">Community reading</string>
+
+    <string name="SearchSource_youku">YOUKU</string>
+
+    <string name="SearchSource_txtr">TXTR</string>
+
+    
+
+    
+
+    <!-- Menu页面字符串 -->
+
+    <string name="Menu_searchSourceSetting">Search source settings</string>
+
+    <string name="Menu_userBinding">User Binding</string>
+
+    <string name="Menu_userUnBinding">User Unbinding</string>
+
+    <string name="Menu_reLogin">Login Again</string>
+
+    
+
+    <!-- WIFIErrorDialog页面字符串-->
+
+    <string name="WIFI_ErrorDialog_title">Network prompt</string>
+
+    <string name="WIFI_ErrorDialog_context">Network disconnection, please detect the Wi-Fi connection settings</string>
+
+    
+
+    <!-- NULLErrorDialog页面字符串-->
+
+    <string name="NULL_ErrorDialog_title">Error</string>
+
+    <string name="NULL_ErrorDialog_context">The search result is empty, please detect the network or search source settings</string>
+
+    
+
+    <!-- Toast页面字符串 -->
+
+    <string name="Toast_offLine">Network disconnection</string>
+
+    
+
+    <!-- Button字符串 -->
+
+    <string name="Button_ok">Confirm</string>
+
+    <string name="Button_cancle">Cancel</string>
+    
+	<!-- Dialog字符串 -->
+    <string name="Dialog_Login_Msg">Readings not login,jump to login activity?</string>
+    <string name="Dialog_Login_Title">Jump</string>
+    <string name="Button_exit">Quit</string>
+    
+    <string name="request_book_url">http://61.181.14.184:8088/Readings/notifyDownload.do?</string>
+
+</resources>

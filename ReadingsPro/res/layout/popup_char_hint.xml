@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/popup_char_min_length"
+    android:textColor="#ffff00"
+    android:background="@color/words_white_color"
+    android:minWidth="@dimen/popup_char_min_length"
+    android:maxWidth="@dimen/popup_char_max_length"
+    android:layout_marginRight="50px"
+    android:layout_marginTop="100px"
+    
+/>

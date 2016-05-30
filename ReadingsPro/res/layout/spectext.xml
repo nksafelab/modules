@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical">
+  
+	<EditText
+		android:id="@+id/key_editView"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="历史"
+		></EditText>
+	<Button
+		android:id="@+id/insert_button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="插入"
+	></Button>
+	
+	<TextView
+		android:id="@+id/key_textView"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+	></TextView>
+	<Button
+		android:id="@+id/select_button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="搜索"
+	></Button>
+	
+	<Button
+		android:id="@+id/clear_button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="清空"
+	></Button>
+	
+	
+	
+	
+</LinearLayout>

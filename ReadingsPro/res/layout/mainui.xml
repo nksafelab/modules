@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myTabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    >
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp"
+        android:gravity="bottom"
+        >
+		        <RelativeLayout
+		        	android:orientation="horizontal"
+		        	android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+		        	android:padding="5dp"
+		        >
+				        <ImageView
+				        	android:id="@+id/logo"
+				        	android:src="@drawable/logo"
+				        	android:layout_width="wrap_content"
+				        	android:layout_height="wrap_content"
+				        ></ImageView>
+				      
+				        <TabWidget
+				        	android:layout_marginBottom="0dp"
+				            android:id="@android:id/tabs"
+				            android:layout_width="fill_parent"
+				            android:layout_height="20dp" 
+				        	android:layout_alignBottom="@id/logo"
+				        	android:layout_toRightOf="@id/logo"
+				        	android:layout_marginLeft="5dp"
+				        	android:paddingBottom="0dp"
+				            />
+		      </RelativeLayout> 
+ 
+	            <LinearLayout
+		            android:orientation="horizontal"
+			        android:layout_width="fill_parent"
+			        android:layout_height="30dp"
+			        android:padding="5dp"
+			        android:background="@drawable/search_bg"
+			        >
+			        <EditText
+				    	android:layout_weight="50"
+				    	android:layout_width="match_parent"
+				    	android:layout_height="29dp"
+				    	android:singleLine="true"
+				    	android:textSize="10px"
+				    	android:drawableLeft="@drawable/search_pic"
+				    />
+				    <Button
+				    	android:id="@+id/searchButton"
+				    	android:layout_width="wrap_content"
+				    	android:layout_height="wrap_content"
+				    	android:background="@drawable/search"
+				    ></Button>
+				    <Button
+				    	android:id="@+id/requestButton"
+				    	android:layout_width="wrap_content"
+				    	android:layout_height="wrap_content"
+				    	android:background="@drawable/request"
+				    ></Button>
+		    	</LinearLayout>
+		    	
+		    	
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="0dp"
+            android:padding="0dp" />
+    </LinearLayout>
+</TabHost>

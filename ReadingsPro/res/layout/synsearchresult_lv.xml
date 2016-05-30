@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" >
+
+<ProgressBar
+	android:id="@+id/syn_myBar"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:paddingTop="120dip"
+	android:layout_gravity="center"
+	
+	style="@android:style/Widget.ProgressBar.Large.Inverse"
+	
+	android:visibility="gone"
+	
+	/>
+<TextView
+	android:id="@+id/syn_barInfo"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="@string/SearchResultActivity_loading"
+	android:visibility="gone"
+	
+	android:paddingTop="10dip"
+	android:layout_gravity="center"
+	
+	android:textColor="#ffffff"
+	/>
+	
+	<ListView 
+		android:id="@+id/syn_listview" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:cacheColorHint="#00000000"
+		android:scrollingCache="false"
+		
+		android:fastScrollEnabled="true"
+    	android:focusable="true" 
+		
+		></ListView>
+</LinearLayout>
